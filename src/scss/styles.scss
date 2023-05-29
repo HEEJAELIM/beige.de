@@ -1,6 +1,8 @@
 @use "_reset.scss";
 @import "_variables";
 @import "_mixins";
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Rancho&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,6 +10,9 @@
 
 body {
   margin-top: 60px;
+  //  font-family: "Caveat Brush", cursive;
+  font-family: "Rancho", cursive;
+  letter-spacing: 1px;
 }
 
 header {
@@ -27,7 +32,7 @@ header {
   }
 
   .header_title {
-    font-size: 50px;
+    font-size: 60px;
   }
   ul {
     display: flex;
@@ -101,18 +106,66 @@ header {
 main {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: 25vw;
+  grid-auto-rows: 27vw;
   section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px 10px;
+    cursor: pointer;
     .appetizer {
       text-align: center;
+      opacity: 0.6;
+    }
+    .dish {
+      font-size: 55px;
+      text-align: center;
+      position: relative;
+      .bg_t {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 2;
+        opacity: 0.9;
+        h6 {
+          font-size: 17px;
+          opacity: 0.8;
+        }
+      }
+      img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+    }
+    .dessert {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      opacity: 0.6;
     }
     &:first-child {
       background-color: #d29d28;
+      &:hover {
+        * {
+          opacity: 0;
+        }
+        //        background-color: cadetblue;
+        background-image: url(/img/1.jpg);
+        background-size: cover;
+      }
     }
     &:nth-child(2) {
+      background-color: #dfcdaa;
+      .bg_t {
+        position: absolute;
+        left: 55;
+        top: -30;
+        color: #23292c;
+      }
+      img {
+      }
     }
     &:nth-child(3) {
     }
