@@ -138,17 +138,38 @@ main {
         object-fit: cover;
         z-index: 1;
       }
+      p {
+        display: none;
+      }
     }
     .dessert {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       font-size: 13px;
       opacity: 0.6;
+      width: 99%;
+      span {
+        &:first-child {
+          width: 33%;
+          justify-content: flex-start;
+        }
+        &:nth-child(2) {
+          width: 33%;
+          display: flex;
+          justify-content: center;
+        }
+        &:last-child {
+          width: 33%;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
     }
     &:first-child {
       background-color: #d29d28;
       &:hover {
-        * {
+        .appetizer,
+        .dish {
           opacity: 0;
         }
         //        background-color: cadetblue;
@@ -160,11 +181,18 @@ main {
       background-color: #dfcdaa;
       .bg_t {
         position: absolute;
-        left: 55;
+        left: 58;
         top: -30;
         color: #23292c;
       }
-      img {
+      &:hover {
+        .appetizer,
+        .dish {
+          opacity: 0;
+        }
+        p {
+          display: block;
+        }
       }
     }
     &:nth-child(3) {
