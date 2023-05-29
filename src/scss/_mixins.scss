@@ -1,0 +1,17 @@
+@mixin list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  color: $bg;
+  font-size: 28px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $bg;
+    color: white;
+  }
+}
