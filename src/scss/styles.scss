@@ -139,7 +139,7 @@ main {
         z-index: 1;
       }
     }
-    .p_text {
+    .dish_hidden {
       height: 100%;
       display: none;
     }
@@ -192,16 +192,17 @@ main {
           opacity: 0;
           height: 0%;
         }
-        .p_text {
+        .dish_hidden {
           display: flex;
           justify-content: center;
           align-items: center;
-          padding: 30px;
+          padding: 25px;
           font-size: 20px;
         }
       }
     }
     &:nth-child(3) {
+      background-image: url(/img/3.jpg);
     }
     &:nth-child(4) {
     }
