@@ -138,9 +138,10 @@ main {
         object-fit: cover;
         z-index: 1;
       }
-      p {
-        display: none;
-      }
+    }
+    .p_text {
+      height: 100%;
+      display: none;
     }
     .dessert {
       display: flex;
@@ -189,9 +190,14 @@ main {
         .appetizer,
         .dish {
           opacity: 0;
+          height: 0%;
         }
-        p {
-          display: block;
+        .p_text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 30px;
+          font-size: 20px;
         }
       }
     }
