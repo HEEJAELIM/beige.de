@@ -1,0 +1,26 @@
+section {
+  &:nth-child(7) {
+    background-color: #cca7ed;
+    .bg_t {
+      position: absolute;
+      left: 58;
+      top: -30;
+      color: #23292c;
+    }
+    .bg_i {
+      width: 100%;
+      height: 50%;
+    }
+    &:hover {
+      background-color: #dfcdaa;
+      .appetizer,
+      .dish {
+        opacity: 0;
+        height: 0%;
+      }
+      .dish_hidden {
+        display: flex;
+      }
+    }
+  }
+}

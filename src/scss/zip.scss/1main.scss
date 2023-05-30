@@ -1,0 +1,14 @@
+section {
+  &:first-child {
+    background-color: #d29d28;
+    &:hover {
+      .appetizer,
+      .dish {
+        opacity: 0;
+      }
+      //        background-color: cadetblue;
+      background-image: url(/img/1.jpg);
+      background-size: cover;
+    }
+  }
+}

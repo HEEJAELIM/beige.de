@@ -1,0 +1,43 @@
+section {
+  &:nth-child(2) {
+    background-color: #dfcdaa;
+    .bg_t {
+      position: absolute;
+      left: 58;
+      top: -30;
+      color: #23292c;
+    }
+    &:hover {
+      background-color: #dfcdaa;
+      .appetizer,
+      .dish {
+        opacity: 0;
+        height: 0%;
+      }
+      .dish_hidden {
+        display: flex;
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    background-color: #dfcdaa;
+    .bg_t {
+      position: absolute;
+      left: 58;
+      top: -30;
+      color: #23292c;
+    }
+    &:hover {
+      background-color: #dfcdaa;
+      .appetizer,
+      .dish {
+        opacity: 0;
+        height: 0%;
+      }
+      .dish_hidden {
+        display: flex;
+      }
+    }
+  }
+}

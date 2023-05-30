@@ -1,0 +1,33 @@
+section {
+  &:nth-child(3) {
+    background-image: url(/img/3.jpg);
+    &:hover {
+      .appetizer,
+      .dish {
+        opacity: 0;
+        height: 0%;
+      }
+      .dish_hidden {
+        display: flex;
+      }
+      background-color: #9ca298;
+    }
+  }
+
+  &:nth-child(5) {
+    background-image: url(/img/5.jpg);
+    background-size: cover;
+    &:hover {
+      .appetizer,
+      .dish {
+        opacity: 0;
+        height: 0%;
+      }
+      .dish_hidden {
+        display: flex;
+      }
+      background-color: #d29d28;
+      background-image: none;
+    }
+  }
+}
