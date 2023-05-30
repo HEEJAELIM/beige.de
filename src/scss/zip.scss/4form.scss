@@ -66,4 +66,72 @@ section {
       }
     }
   }
+
+  &:last-child {
+    background-color: #ef5f5f;
+  }
+  .dish2 {
+    font-family: "Caveat Brush", cursive;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-top: -15px;
+    &:hover {
+      span {
+        &:first-child {
+          color: #dfcdaa;
+        }
+        &:nth-child(2) {
+          color: #b96f47;
+        }
+        &:nth-child(3) {
+          color: #cda8ec;
+        }
+        &:nth-child(4) {
+          color: #fc7b41;
+        }
+        &:nth-child(5) {
+          color: #6c95cf;
+        }
+        &:nth-child(6) {
+          color: #d4a335;
+        }
+        &:nth-child(7) {
+          color: #aca86a;
+        }
+        &:last-child {
+          color: #b4d5a3;
+        }
+      }
+    }
+  }
+  .dessert2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    input {
+      border: none;
+      padding: 12px 12px;
+      border-radius: 50px;
+      outline: none;
+      font-size: 14px;
+      &::placeholder {
+        font-size: 17px;
+      }
+      &:first-child {
+        margin-right: 7px;
+      }
+      &:last-child {
+        background-color: #f99964;
+        color: rgba(0, 0, 0, 0.8);
+        &:hover {
+          background-color: #fc7c42;
+        }
+      }
+    }
+  }
 }

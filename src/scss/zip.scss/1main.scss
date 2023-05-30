@@ -11,4 +11,16 @@ section {
       background-size: cover;
     }
   }
+  &:nth-child(8) {
+    background-color: #5d8cce;
+    &:hover {
+      .appetizer,
+      .dish {
+        opacity: 0;
+      }
+      //        background-color: cadetblue;
+      background-image: url(/img/12.jpg);
+      background-size: cover;
+    }
+  }
 }
