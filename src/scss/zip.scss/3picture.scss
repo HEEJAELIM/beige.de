@@ -1,6 +1,6 @@
 section {
-  &:nth-child(3) {
-    background-image: url(/img/3.jpg);
+  &:nth-child(3),
+  &:nth-child(5) {
     &:hover {
       .appetizer,
       .dish {
@@ -10,6 +10,11 @@ section {
       .dish_hidden {
         display: flex;
       }
+    }
+  }
+  &:nth-child(3) {
+    background-image: url(/img/3.jpg);
+    &:hover {
       background-color: #9ca298;
     }
   }
@@ -18,14 +23,6 @@ section {
     background-image: url(/img/5.jpg);
     background-size: cover;
     &:hover {
-      .appetizer,
-      .dish {
-        opacity: 0;
-        height: 0%;
-      }
-      .dish_hidden {
-        display: flex;
-      }
       background-color: #d29d28;
       background-image: none;
     }

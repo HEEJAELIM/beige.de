@@ -65,6 +65,9 @@ main {
       align-items: center;
       padding: 25px;
       font-size: 20px;
+      &:hover {
+        animation: section_h 1s ease-in-out forwards;
+      }
     }
     .dessert {
       display: flex;
@@ -89,5 +92,28 @@ main {
         }
       }
     }
+    &:hover {
+      animation: section_i 1s ease-in-out forwards;
+    }
+  }
+}
+
+@keyframes section_i {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes section_h {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(180deg);
   }
 }
