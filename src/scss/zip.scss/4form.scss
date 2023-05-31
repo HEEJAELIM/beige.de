@@ -1,6 +1,7 @@
 section {
   &:nth-child(6),
   &:last-child {
+    animation: stt 1.7s ease-in-out forwards;
     .dish2 {
       font-family: "Caveat Brush", cursive;
       height: 80%;

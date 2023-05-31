@@ -1,13 +1,13 @@
 section {
   &:first-child,
   &:nth-child(8) {
+    animation: stt 0.5s ease-in-out forwards;
     &:hover {
       .appetizer,
       .dish {
         opacity: 0;
       }
       background-size: cover;
-      animation: section_3 1s ease-in-out forwards;
     }
   }
 
@@ -22,14 +22,5 @@ section {
     &:hover {
       background-image: url(/img/12.jpg);
     }
-  }
-}
-@keyframes section_3 {
-  0% {
-    transform: rotateY(0deg);
-  }
-
-  100% {
-    transform: rotateY(360deg);
   }
 }

@@ -1,6 +1,7 @@
 section {
   &:nth-child(7),
   &:nth-child(10) {
+    animation: stt 2.1s ease-in-out forwards;
     .dish {
       display: flex;
       flex-direction: column;

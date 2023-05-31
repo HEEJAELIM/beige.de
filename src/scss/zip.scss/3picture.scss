@@ -1,6 +1,7 @@
 section {
   &:nth-child(3),
   &:nth-child(5) {
+    animation: stt 1.3s ease-in-out forwards;
     &:hover {
       .appetizer,
       .dish {

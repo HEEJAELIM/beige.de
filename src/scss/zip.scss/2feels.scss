@@ -3,6 +3,7 @@ section {
   &:nth-child(4),
   &:nth-child(9),
   &:nth-child(11) {
+    animation: stt 0.9s ease-in-out forwards;
     background-color: #dfcdaa;
     .bg_t {
       position: absolute;
